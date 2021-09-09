@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/im_1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_layout1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.28"/>
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mua bán có tâm"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/gl_1"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8K Fan"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/gl_1"
+        app:layout_constraintTop_toBottomOf="@id/tv_1"/>
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhóm đóng"
+        android:textSize="17sp"
+        android:textColor="#4F000000"
+        app:layout_constraintLeft_toRightOf="@id/gl_1"
+        app:layout_constraintTop_toBottomOf="@id/tv_2"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+10 bài viết mới nhất"
+        android:textColor="#4F000000"
+        app:layout_constraintLeft_toRightOf="@id/gl_2"
+        app:layout_constraintTop_toBottomOf="@id/tv_1"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
